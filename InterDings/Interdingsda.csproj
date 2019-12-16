@@ -48,6 +48,7 @@
     <Compile Include="Boat.cs" />
     <Compile Include="Dingsda.cs" />
     <Compile Include="Dragon.cs" />
+    <Compile Include="ICountable.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="Airtaxi.cs" />
     <Compile Include="IFlyable.cs" />
