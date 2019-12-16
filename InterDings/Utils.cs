@@ -45,7 +45,7 @@ namespace Interdingsda
       /// This field provides a counter to be used as Ding-ID
       /// </summary>
       /// <remarks>[field 20191212°1133]</remarks>
-      public static int dingIdCounter = 0;
+      protected static int iIdCounter = 0;
 
 // This is what shall be replaced by using interface ICountable
 /*

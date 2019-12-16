@@ -18,8 +18,8 @@ namespace Interdingsda
       /// <remarks>[class 20191212°1015]</remarks>
       public Dragon()
       {
-         Utils.dingIdCounter++;
-         this.ID = Utils.dingIdCounter;
+         Utils.iIdCounter++;
+         this.ID = Utils.iIdCounter;
          Utils.dings.Add(this);
 
          Utils.flyables.Add(this);

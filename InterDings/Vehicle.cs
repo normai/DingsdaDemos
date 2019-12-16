@@ -19,8 +19,8 @@ namespace Interdingsda
       /// <remarks>[class 20191212°1121]</remarks>
       public Vehicle()
       {
-         Utils.dingIdCounter++;
-         this.ID = Utils.dingIdCounter;
+         Utils.iIdCounter++;
+         this.ID = Utils.iIdCounter;
          Utils.dings.Add(this);
 
          Console.WriteLine("Create " + this.Me);
