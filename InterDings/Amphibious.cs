@@ -22,7 +22,7 @@ namespace Interdingsda
       /// <remarks>[class 20191212°0315]</remarks>
       public Amphibious()
       {
-         Dingsda.swimmables.Add(this);
+         Utils.swimmables.Add(this);
       }
 
       /// <summary>
@@ -31,7 +31,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0321]</remarks>
       public void Swimm()
       {
-         string s = " - " + this.Me + " turns the amphibian propeller.";
+         string s = " - " + base.Me + " turns the amphibian propeller.";
          Console.WriteLine(s);
       }
    }

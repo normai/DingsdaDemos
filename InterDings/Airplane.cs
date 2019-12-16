@@ -22,7 +22,7 @@ namespace Interdingsda
       /// <remarks>[class 20191212°0115]</remarks>
       public Airplane()
       {
-         Dingsda.flyables.Add(this);
+         Utils.flyables.Add(this);
       }
 
       /// <summary>
@@ -31,7 +31,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0121]</remarks>
       public override void Park()
       {
-         string s = this.Me + " go to the hangar.";
+         string s = base.Me + " go to the hangar.";
          Console.WriteLine(s);
       }
 

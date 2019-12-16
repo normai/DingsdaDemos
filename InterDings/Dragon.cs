@@ -14,7 +14,7 @@ namespace Interdingsda
    /// This class constitues a dragon
    /// </summary>
    /// <remarks>[class 20191212°1013]</remarks>
-   class Dragon : Dingsda, IFlyable
+   class Dragon : ICountable, IFlyable
    {
       /// <summary>
       /// This constructor's sole purpose is to put the new dragon automatically on the Flyables list
@@ -22,8 +22,21 @@ namespace Interdingsda
       /// <remarks>[class 20191212°1015]</remarks>
       public Dragon()
       {
-         Dingsda.flyables.Add(this);
+         Utils.flyables.Add(this);
       }
+
+      /// <summary>
+      /// This property is wanted by the ICountable interface. Not that to make
+      /// the property sensible, we also need to set it properly in the constructor
+      /// </summary>
+      /// <remarks>[prop 20191216°1541] </remarks>
+      int ICountable.ID { get; set; }
+
+      /// <summary>
+      /// This property is wanted by the ICountable interface.
+      /// </summary>
+      /// <remarks>[prop 20191216°1543] </remarks>
+      public string Me { get; set; }
 
       /// <summary>
       /// This method needs to exist due to the iFlyable interface.

@@ -44,14 +44,16 @@ namespace Interdingsda
          new Dragon();
 
          Console.Write("\nList of all Dings :");
-         foreach (Dingsda d in Dingsda.dings)
+         foreach (Object d in Utils.dings)
          {
-            Console.Write(" " + d.Me + ";");
+            ////Console.Write(" " + d.Me + ";");
+            ICountable ic = (ICountable) d; // in civilized paranoia, we would validate with 'is' operator before
+            Console.Write(" " + ic.Me + ";");
          }
 
          Console.Write("\n\nList of all Automobiles :");
          //foreach (Automobile a in Automobile.autos) // why does this work as well?
-         foreach (Automobile a in Dingsda.autos)
+         foreach (Automobile a in Utils.autos)
          {
             Console.Write(" " + a.Me + ";");
          }
@@ -59,14 +61,14 @@ namespace Interdingsda
          // Dingsda.flyables.
 
          Console.WriteLine("\n\nLet all Flyables fly :");
-         foreach (IFlyable f in Dingsda.flyables)
+         foreach (IFlyable f in Utils.flyables)
          {
             Console.Write(" - " + f.GetHashCode());
             f.Fly();
          }
 
          Console.WriteLine("\nLet all Swimmables swimm :");
-         foreach (ISwimmable s in Dingsda.swimmables)
+         foreach (ISwimmable s in Utils.swimmables)
          {
             s.Swimm();
          }
@@ -75,92 +77,34 @@ namespace Interdingsda
          // For alternatives and exact meanings see e.g. [ref 20191212°1531]
          // https://stackoverflow.com/questions/3561202/check-if-instance-is-of-a-type
          Console.WriteLine("\nList of all dings with type info :");
-         foreach (Dingsda d in Dingsda.dings)
+         foreach (Object d in Utils.dings)
          {
-            Console.Write(" - " + d.Me.PadRight(12) + " :");
+            ////Console.Write(" - " + d.Me.PadRight(12) + " :");
+            ICountable ic = (ICountable) d;
+            Console.Write(" - " + ic.Me.PadRight(12) + " :");
 
-            // The original formulation of the multi-if sequence in the
-            // first branch extremely bloated. In the else-branch you find it
-            // replaced by a terse version using the ternary '?:' operator.
-            if (false) // toggle to switch used code
-            {
-               if (d is Airplane)
-               {
-                  Console.Write(" Airplane");
-               }
-               if (d is Airtaxi)
-               {
-                  Console.Write(" Airtaxi");
-               }
-               if (d is Amphibious)
-               {
-                  Console.Write(" Amphibious");
-               }
-               if (d is Automobile)
-               {
-                  Console.Write(" Automobile");
-               }
-               if (d is Boat)
-               {
-                  Console.Write(" Boat");
-               }
-               if (d is Dingsda)
-               {
-                  Console.Write(" Dingsda");
-               }
-               if (d is Dragon)
-               {
-                  Console.Write(" Dragon");
-               }
-               if (d is IFlyable)
-               {
-                  Console.Write(" IFlyable");
-               }
-               if (d is ISwimmable)
-               {
-                  Console.Write(" ISwimmable");
-               }
-               if (d is Vehicle)
-               {
-                  Console.Write(" Vehicle");
-               }
-               Console.WriteLine();
-            }
-            else
-            {
-               string s = "";
-
-               //s = (d is Airplane) ? s + " Airplane" : s;
-               if (d is Airplane)
-               {
-                  s = s + " Airplane";
-               }
-               else
-               {
-                  s = s;
-               }
-
-               s = (d is Airtaxi) ? s + " Airtaxi" : s;
-               s = (d is Amphibious) ? s + " Amphibious" : s;
-               s = (d is Automobile) ? s + " Automobile" : s;
-               s = (d is Boat) ? s + " Boat" : s;
-               s = (d is Dingsda) ? s + " Dingsda" : s;
-               s = (d is Dragon) ? s + " Dragon" : s;
-               s = (d is IFlyable) ? s + " IFlyable" : s;
-               s = (d is ISwimmable) ? s + " ISwimmable" : s;
-               s = (d is Vehicle) ? s + " Vehicle" : s;
-               Console.WriteLine(s);
-            }
+            // build string with all castable types
+            string s = "";
+            s = (ic is Airplane) ? s + " Airplane" : s;
+            s = (ic is Airtaxi) ? s + " Airtaxi" : s;
+            s = (ic is Amphibious) ? s + " Amphibious" : s;
+            s = (ic is Automobile) ? s + " Automobile" : s;
+            s = (ic is Boat) ? s + " Boat" : s;
+            s = (ic is Object) ? s + " Object" : s; // formerly Dingsda
+            s = (ic is Dragon) ? s + " Dragon" : s;
+            s = (ic is IFlyable) ? s + " IFlyable" : s;
+            s = (ic is ISwimmable) ? s + " ISwimmable" : s;
+            s = (ic is Vehicle) ? s + " Vehicle" : s;
+            Console.WriteLine(s);
          }
 
-         // One additional demo. Since the ternary operator is not a
-         // command but an expression, you can use it at places where
-         // a if-condition would not fit.
+         // Sidekick demo. Since the ternary operator is not a command but an
+         // expression, you can use it at places where a if-condition were impossible.
          Boolean bDummy = true;
-         Console.WriteLine("\nTeste{0} Syntax{1}.", (bDummy ? 11 : 22), 23);
+         Console.WriteLine("\nTeste {0} Syntax {1}.", (bDummy ? 11 : 22), 23);
 
          Console.WriteLine("\nLoop over all Dings and fly them, but only if allowed");
-         foreach (Dingsda d in Dingsda.dings)
+         foreach (Object d in Utils.dings)
          {
             if (d is IFlyable)
             {
@@ -170,7 +114,6 @@ namespace Interdingsda
                //f2.Fly();
             }
          }
-
 
          Console.Write("\n");
       }

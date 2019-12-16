@@ -22,7 +22,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0441]</remarks>
       public Automobile()
       {
-         autos.Add(this);
+         Utils.autos.Add(this);
       }
 
       /// <summary>
@@ -32,7 +32,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0421]</remarks>
       public override void Park()
       {
-         string s = this.Me + " go to the garage.";
+         string s = base.Me + " go to the garage.";
          Console.WriteLine(s);
       }
 

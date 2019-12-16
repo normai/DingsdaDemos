@@ -22,7 +22,7 @@ namespace Interdingsda
       /// <remarks>[class 20191212°0515]</remarks>
       public Boat()
       {
-         Dingsda.swimmables.Add(this);
+         Utils.swimmables.Add(this);
       }
 
       /// <summary>

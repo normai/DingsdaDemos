@@ -15,13 +15,13 @@ namespace Interdingsda
    ///  all our various dings on one single common list.
    /// </summary>
    /// <remarks>[class 20191212°1113]</remarks>
-   abstract class Dingsda
+   static class Utils
    {
       /// <summary>
-      /// This field provides one list with all existing Dings
+      /// This field provides one list with all existing thingies
       /// </summary>
       /// <remarks>[field 20191212°1143]</remarks>
-      public static List<Dingsda> dings = new List<Dingsda>();
+      public static List<Object> dings = new List<Object>();
 
       /// <summary>
       /// This static list holds all wheeling dings.
@@ -50,6 +50,8 @@ namespace Interdingsda
       /// <remarks>[field 20191212°1133]</remarks>
       public static int dingIdCounter = 0;
 
+// This is what shall be replaced by using interface ICountable
+/*
       /// <summary>
       /// This field holds the dings individual ID
       /// </summary>
@@ -87,5 +89,6 @@ namespace Interdingsda
             return s;
          }
       }
+*/
    }
 }
