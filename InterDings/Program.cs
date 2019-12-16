@@ -46,24 +46,23 @@ namespace Interdingsda
          Console.Write("\nList of all Dings :");
          foreach (Object d in Utils.dings)
          {
-            ////Console.Write(" " + d.Me + ";");
-            ICountable ic = (ICountable) d; // in civilized paranoia, we would validate with 'is' operator before
-            Console.Write(" " + ic.Me + ";");
+            string s = "FATAL;";                       // this should never show up
+            if (d is ICountable) {                     // just our groomed paranoia
+               ICountable ic = (ICountable)d;
+               s = ic.Me + ";";
+            }
+            Console.Write(" " + s);
          }
 
          Console.Write("\n\nList of all Automobiles :");
-         //foreach (Automobile a in Automobile.autos) // why does this work as well?
          foreach (Automobile a in Utils.autos)
          {
             Console.Write(" " + a.Me + ";");
          }
 
-         // Dingsda.flyables.
-
          Console.WriteLine("\n\nLet all Flyables fly :");
          foreach (IFlyable f in Utils.flyables)
          {
-            Console.Write(" - " + f.GetHashCode());
             f.Fly();
          }
 
@@ -73,13 +72,12 @@ namespace Interdingsda
             s.Swimm();
          }
 
-         // This sequence demonstrates polymorphy, is, ..
-         // For alternatives and exact meanings see e.g. [ref 20191212°1531]
-         // https://stackoverflow.com/questions/3561202/check-if-instance-is-of-a-type
+         // This sequence demonstrates polymorphy and the 'is' operator.
+         // For alternativ to 'is' e.g. [ref 20191212°1531]
+         //   https://stackoverflow.com/questions/3561202/check-if-instance-is-of-a-type
          Console.WriteLine("\nList of all dings with type info :");
          foreach (Object d in Utils.dings)
          {
-            ////Console.Write(" - " + d.Me.PadRight(12) + " :");
             ICountable ic = (ICountable) d;
             Console.Write(" - " + ic.Me.PadRight(12) + " :");
 
@@ -100,18 +98,19 @@ namespace Interdingsda
 
          // Sidekick demo. Since the ternary operator is not a command but an
          // expression, you can use it at places where a if-condition were impossible.
+         /*
          Boolean bDummy = true;
          Console.WriteLine("\nTeste {0} Syntax {1}.", (bDummy ? 11 : 22), 23);
+         */
 
-         Console.WriteLine("\nLoop over all Dings and fly them, but only if allowed");
+         Console.WriteLine("\nLoop over all Dings and fly them if possible");
          foreach (Object d in Utils.dings)
          {
             if (d is IFlyable)
             {
-               IFlyable f1 = (IFlyable)d;   // old style cast operator
-               IFlyable f2 = d as IFlyable; // C# style cast operator
+               IFlyable f1 = (IFlyable) d;   // old C style cast operator
+               IFlyable f2 = d as IFlyable;  // new C# style cast operator
                f1.Fly();
-               //f2.Fly();
             }
          }
 

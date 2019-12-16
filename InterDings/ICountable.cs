@@ -17,10 +17,11 @@ namespace Interdingsda
       int ID { get; set; }
 
       /// <summary>
-      /// This property provides an object description. Another way to achieve
-      /// this functionality were possibly to overwrite the ToString() method.
+      /// This property provides an object description. This represents not any
+      /// stored value, but is calculated at runtime. Another — possibly more elegant
+      /// way — to achieve this functionality were to overwrite the ToString() method.
       /// </summary>
       /// <remarks>[imethod 20191216°1521]</remarks>
-      string Me { get; set; }
+      string Me { get; }
    }
 }

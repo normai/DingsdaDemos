@@ -37,7 +37,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0231]</remarks>
       public void Fly()
       {
-         string s = " - " + this.Me + " rotates the rotors.";
+         string s = " - " + this.Me + " rotates the rotors. (Hashcode " + this.GetHashCode() + ")";
          Console.WriteLine(s);
       }
    }

@@ -41,7 +41,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0131]</remarks>
       public void Fly()
       {
-         string s = " - " + this.Me + " turns on the nozzles.";
+         string s = " - " + this.Me + " turns on the nozzles. (Hashcode " + this.GetHashCode() + ")";
          Console.WriteLine(s);
       }
    }

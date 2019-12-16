@@ -61,7 +61,7 @@ namespace Interdingsda
          Console.WriteLine("\n\nLet all Flyables fly :");
          foreach (IFlyable f in Dingsda.flyables)
          {
-            Console.Write(" - " + f.GetHashCode());
+            ///Console.Write(" - " + f.GetHashCode());
             f.Fly();
          }
 

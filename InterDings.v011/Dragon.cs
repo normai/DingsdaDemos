@@ -31,7 +31,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°1021]</remarks>
       public void Fly()
       {
-         string s = " - " + this.Me + " swings it's wings.";
+         string s = " - " + this.Me + " swings it's wings. (Hashcode " + this.GetHashCode() + ")";
          Console.WriteLine(s);
       }
    }

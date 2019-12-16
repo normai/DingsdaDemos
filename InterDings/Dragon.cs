@@ -3,10 +3,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Interdingsda
 {
@@ -22,7 +18,13 @@ namespace Interdingsda
       /// <remarks>[class 20191212°1015]</remarks>
       public Dragon()
       {
+         Utils.dingIdCounter++;
+         this.ID = Utils.dingIdCounter;
+         Utils.dings.Add(this);
+
          Utils.flyables.Add(this);
+
+         Console.WriteLine("Create " + this.Me);
       }
 
       /// <summary>
@@ -30,13 +32,20 @@ namespace Interdingsda
       /// the property sensible, we also need to set it properly in the constructor
       /// </summary>
       /// <remarks>[prop 20191216°1541] </remarks>
-      int ICountable.ID { get; set; }
+      public int ID { get; set; }
 
       /// <summary>
       /// This property is wanted by the ICountable interface.
       /// </summary>
       /// <remarks>[prop 20191216°1543] </remarks>
-      public string Me { get; set; }
+      public string Me
+      {
+         get
+         {
+            string s = this.GetType().Name + " " + this.ID;
+            return s;
+         }
+      }
 
       /// <summary>
       /// This method needs to exist due to the iFlyable interface.
@@ -44,7 +53,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°1021]</remarks>
       public void Fly()
       {
-         string s = " - " + this.Me + " swings it's wings.";
+         string s = " - " + this.Me + " swings it's wings. (Hashcode " + this.GetHashCode() + ")";
          Console.WriteLine(s);
       }
    }

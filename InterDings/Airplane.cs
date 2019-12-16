@@ -3,10 +3,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Interdingsda
 {
@@ -41,7 +37,7 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0131]</remarks>
       public void Fly()
       {
-         string s = " - " + this.Me + " turns on the nozzles.";
+         string s = " - " + this.Me + " turns on the nozzles. (Hashcode " + this.GetHashCode() + ")";
          Console.WriteLine(s);
       }
    }

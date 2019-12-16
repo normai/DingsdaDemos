@@ -72,7 +72,7 @@ namespace Interdingsda
          this.id = dingIdCounter;
          dings.Add(this);
 
-         Console.WriteLine("Created : " + this.Me);
+         Console.WriteLine("Create " + this.Me);
       }
 
       /// <summary>
