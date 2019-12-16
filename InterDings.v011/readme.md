@@ -1,7 +1,6 @@
-﻿
-# Project Interdingsda
+﻿# Project Interdingsda
 
-This project demonstrate the use of abstract classes and interfaces.
+This project demonstrates the use of abstract classes and interfaces.
 
 ### Abstract method
 
