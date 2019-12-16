@@ -45,47 +45,7 @@ namespace Interdingsda
       /// This field provides a counter to be used as Ding-ID
       /// </summary>
       /// <remarks>[field 20191212°1133]</remarks>
-      protected static int iIdCounter = 0;
+      public static int iIdCounter = 0;
 
-// This is what shall be replaced by using interface ICountable
-/*
-      /// <summary>
-      /// This field holds the dings individual ID
-      /// </summary>
-      /// <remarks>[field 20191212°1137]</remarks>
-      public int id;
-
-      /// <summary>
-      /// This field holds the dings color, just for fun
-      /// </summary>
-      /// <remarks>[field 20191212°1139]</remarks>
-      public string color = "Gray";
-
-      /// <summary>
-      /// This constructor places each new Ding on the big list
-      /// </summary>
-      /// <remarks>[class 20191212°1121]</remarks>
-      public Dingsda()
-      {
-         dingIdCounter++;
-         this.id = dingIdCounter;
-         dings.Add(this);
-
-         Console.WriteLine("Created : " + this.Me);
-      }
-
-      /// <summary>
-      /// This property provides a short indentifyer string for this ding
-      /// </summary>
-      /// <returns>[method 20191212°1141]</returns>
-      public string Me
-      {
-         get
-         {
-            string s = this.GetType().Name + " " + this.id;
-            return s;
-         }
-      }
-*/
    }
 }
