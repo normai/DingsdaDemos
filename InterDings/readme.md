@@ -89,6 +89,8 @@ and which continue to exist exactly as they are.
 
 - To retain the object's ID and Me property, we introduced interface **ICountable**
 
+![Overview Projekt Interdingsda](./../../../DingsdaDemos/InterDings2/20191216o1733.interdingsda.uxf.png "Projekt Interdingsda Phase 1")
+
 To inspect the changes of the transformation, see the GIT logs with
 comment 'Adjust syntax' and 'Restore functionality'.
 
@@ -101,7 +103,7 @@ only introduced as quick'n'dirty helper to avoid dealing dealing with the
 Object class itself. How to use the Object class, we will demonstrate in
 the next version.
 
-![Overview Projekt Interdingsda](./../../../DingsdaDemos/InterDings.v011/20191212o1211.interdingsda.uxf.png "Projekt Interdingsda Phase 1")
+![Overview Projekt Interdingsda](./../../../DingsdaDemos/InterDings1/20191212o1211.interdingsda.uxf.png "Projekt Interdingsda Phase 1")
 
 ## 4. Todos
 
