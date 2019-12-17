@@ -22,12 +22,48 @@ namespace Interdingsda
       /// <remarks>[method 20191212°0821]</remarks>
       static void Main(string[] args)
       {
-         Console.WriteLine("*** Welcome to InterDingsda v0.1.1 ***");
+         Console.WriteLine("*** Welcome to InterDings v0.3.0 ***");
 
          Go();
 
+         bool bContinue = true;
+         while (bContinue)
+         {
+            Console.WriteLine();
+            Console.WriteLine("*** Select: Albert Caesar Doris Fritz Gunda eXit ***");
+
+            ConsoleKeyInfo cki = Console.ReadKey(true);
+            Console.WriteLine("You pressed \"" + cki.KeyChar + "\"");
+            string sKey = cki.KeyChar.ToString().ToLower();
+            switch (sKey)
+            {
+               case "a":
+                  Console.WriteLine("Nothing yet implemented.");
+                  break;
+               case "c":
+                  Console.WriteLine("Nothing yet implemented.");
+                  break;
+               case "d":
+                  GoDoris();
+                  break;
+               case "f":
+                  Console.WriteLine("Nothing yet implemented.");
+                  break;
+               case "g":
+                  Console.WriteLine("Nothing yet implemented.");
+                  break;
+               case "x":
+                  bContinue = false;
+                  break;
+               default:
+                  Console.WriteLine("Unknown key pressed.");
+                  bContinue = false;
+                  break;
+            }
+         }
+
          Console.WriteLine("*** Bye. ***");
-         Console.ReadKey();
+         System.Threading.Thread.Sleep(666);
       }
 
       /// <summary>
@@ -113,8 +149,15 @@ namespace Interdingsda
                f1.Fly();
             }
          }
+      }
 
-         Console.Write("\n");
+      /// <summary>
+      /// This method executes menu item 'd'
+      /// </summary>
+      /// <remarks>[mehtod 20191217°1011</remarks>
+      private static void GoDoris()
+      {
+         Console.WriteLine("This shall execute any Doris Demos (nothing implemented yet).");
       }
    }
 }
