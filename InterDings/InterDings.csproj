@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{630B109A-6C69-4A52-B908-B0BD6FB2A082}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Interdingsda</RootNamespace>
-    <AssemblyName>Interdingsda</AssemblyName>
+    <RootNamespace>DingsdaDemos</RootNamespace>
+    <AssemblyName>interdings</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
