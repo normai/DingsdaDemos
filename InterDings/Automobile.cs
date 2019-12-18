@@ -10,7 +10,7 @@ namespace Interdingsda
    /// This class constitues an automobile, it can wheel
    /// </summary>
    /// <remarks>[class 20191212°0413]</remarks>
-   class Automobile : Vehicle
+   public class Automobile : Vehicle
    {
       /// <summary>
       /// This constructor creates an automobile

@@ -10,7 +10,7 @@ namespace Interdingsda
    /// This class serves as base class for all other vessels
    /// </summary>
    /// <remarks>[class 20191212°0913]</remarks>
-   abstract class Vehicle : ICountable
+   public abstract class Vehicle : ICountable
    {
 
       /// <summary>
