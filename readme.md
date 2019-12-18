@@ -1,25 +1,38 @@
-﻿# DingsdaDemos <sub><sup>v0.3.0x</sup></sub>
-
-Project **InterDingsda** is so far the only project in this repository.
+﻿# DingsdaDemos Solution <sub><sup>v0.3.0x</sup></sub>
 
 ## 1. Synopsis
 
 **Platform** : C-Sharp, Visual Studio 2017, .NET 4.6.1
 
-**Slogan** : Understand interfaces
+**Slogan** : Understand some baffling C# features
 
-**Summary** : This project demonstrates interfaces and their paraphernalia
-• abstract methods • virtual methods • type casting • IEnumerable
+**Summary** : This solution hosts some project to demonstrate
+some non-trivial C# features like interfaces or IEnumerator.
 
 **License** : The MIT-License
 
-**Authors** : Norbert C. Maier, ...
+**Authors** : Norbert C. Maier and contributors
 
-**Copyright** : None
+**Copyright** : Norbert C. Maier and contributors
 
-## 2. The story
+## 2. Projects
 
-### 2.1 Actors
+- [InterDings](./InterDings/readme.md).
+The main project, this contains also the class hierarchy
+which is used by the other projects
+
+- [IEnumablDings](./IEnumablDings/readme.md).
+This contains a class which implements the IEnumerable<> interface
+and shows how to use it.
+
+## 3. The story
+
+The class hierarchy created in the InterDings project can be used
+from the other projects as well. The story goes like follows.
+
+![Project Interdingsda Overview](./docs/20191218o1641.interdingsda.uxf.png "Project Interdingsda class hierarchy")
+
+### 3.1 Actors
 
 The main actor is the **Vehicle**.
 The Vehicle is abstract, because in the real world, you find only concrete incarnations of them.
@@ -52,66 +65,12 @@ The **ISwimmable** interface provides some objects the swimming capability.
 The **ICountable** interface provides all classes in the game some common
 addressing properties, so we can have a list of just all existing things.
 
-### 2.2 Points of Interest
+### 4.2 Points of Interest
 
 The ICountable interface could be replaced by extension methods on the Object class.
 But we shyed away from this move, because we do not want touch the .NET core functionality.
 
 . . .
 
-. . .
-
-. . .
-
-## 3. Development Phases
-
-#### Phase 4 (planned)
-
-Introduces sequences to demonstrate **LINQ**
-
-. . .
-
-
-#### Phase 3 (planned)
-
-Introduces sequences to demonstrate **IEnumerable**
-
-. . .
-
-
-#### Phase 2
-
-Remove the artificial object 'Dingsda' class and replace it by the .NET native Object class.
-The steps are :
-
-- The original file/class 'Dingsda' war renamed to **static** file/class 'Utils'.
-This was done, because that file contains the static various lists we already had,
-and which continue to exist exactly as they are.
-
-- Replace 'List<Dings> dings' by 'List<**Object**> dings'
-
-- To retain the object's ID and Me property, we introduced interface **ICountable**
-
-![Overview Projekt Interdingsda](./docs/20191216o1733.interdingsda.uxf.png "Projekt Interdingsda Phase 1")
-
-To inspect the changes of the transformation, see the GIT logs with
-comment 'Adjust syntax' and 'Restore functionality'.
-
-#### Phase 1
-
-Initial version.
-
-As the top parent class functions the dedicated class 'Dingsda', which is
-only introduced as quick'n'dirty helper to avoid dealing dealing with the
-Object class itself. How to use the Object class, we will demonstrate in
-the next version.
-
-![Overview Projekt Interdingsda](./docs/20191212o1211.interdingsda.uxf.png "Projekt Interdingsda Phase 1")
-
-## 4. Todos
-
-Not all methods are use so far, e.g. Park(), Clean(). Use them.
-<sub><sup>[todo 20191212°1923]</sup></sub>
-
 ---
- <sub><sup>[file 20191216°1717][project 20191212°0011]܀Ω</sup></sub>
+ <sub><sup>[file 20191216°1717][solution 20191212°0011]܀Ω</sup></sub>

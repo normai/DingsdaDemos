@@ -1,0 +1,41 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>260</y><w>150</w><h>90</h></coordinates><panel_attributes>/Vehicle/
+-
+double speed
+-
+abstract void Park()
+virtual void Clean()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>430</y><w>150</w><h>70</h></coordinates><panel_attributes>Automobile
+-
+-
+Drive()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>340</y><w>40</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>560</y><w>150</w><h>60</h></coordinates><panel_attributes>Amphibious
+-
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>490</y><w>50</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>430</y><w>150</w><h>70</h></coordinates><panel_attributes>Airplane
+-
+-
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>340</y><w>210</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>560</y><w>150</w><h>60</h></coordinates><panel_attributes>Airtaxi
+-
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>490</y><w>200</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>430</y><w>150</w><h>70</h></coordinates><panel_attributes>Boat
+-
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>340</y><w>400</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;380;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>260</y><w>140</w><h>80</h></coordinates><panel_attributes>Dragon
+-
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>400</x><y>70</y><w>60</w><h>100</h></coordinates><panel_attributes>/IFlyable/
+--
+Fly()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>140</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;120</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>540</x><y>70</y><w>80</w><h>100</h></coordinates><panel_attributes>/ISwimmable/
+--
+Swimm()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>150</y><w>50</w><h>300</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>30;10;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>150</y><w>490</w><h>500</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>430;10;470;210;470;450;440;480;70;480;70;390;10;390;10;410</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>140</y><w>200</w><h>440</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;180;110;180;230;110;250;110;370;10;420</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>140</y><w>160</w><h>310</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;140;110;140;210;60;230;10;290</additional_attributes></element><element><id>Text</id><coordinates><x>130</x><y>0</y><w>400</w><h>40</h></coordinates><panel_attributes>halign=center
+fontsize=24
+style=wordwrap
+*Project InterDingsda*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>70</x><y>660</y><w>530</w><h>20</h></coordinates><panel_attributes>[File 20191218°1641] Diagram created with http://www.umlet.com/umletino/umletino.html</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>190</x><y>40</y><w>120</w><h>130</h></coordinates><panel_attributes>/IRegisterable/
+--
+List&lt;Object&gt; dings
+int ID
+string Me
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>140</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>140</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;120</additional_attributes></element></diagram>
