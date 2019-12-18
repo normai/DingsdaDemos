@@ -1,4 +1,4 @@
-﻿## Background notes on DingsdaDemos
+﻿## Additional notes
 
 ### 1. Todos
 
