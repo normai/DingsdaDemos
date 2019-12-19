@@ -1,5 +1,5 @@
 ﻿/*
- * [file 20191212°0811]
+ * [file 20191212°0813][project 20191212°0811]
  */
 
 using System;
@@ -13,7 +13,7 @@ namespace Interdingsda
    /// <summary>
    /// This (static) class provides the basic program controls ..
    /// </summary>
-   /// <remarks>[method 20191212°0813]</remarks>
+   /// <remarks>[method 20191212°0815]</remarks>
    class Program
    {
       /// <summary>
