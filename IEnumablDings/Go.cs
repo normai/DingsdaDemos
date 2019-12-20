@@ -30,6 +30,7 @@ namespace IEnumablDings
          // akquire an enumerator [seq ]
          Thingies t = new Thingies();
          IEnumerator<string> en1 = t.GetEnumerator();
+
          /*
          string s1 = en1.Current;
          en1.MoveNext();

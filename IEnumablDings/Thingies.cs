@@ -109,7 +109,7 @@ namespace IEnumablDings
       public bool MoveNext()
       {
          ////throw new NotImplementedException();
-         bool bRet = false;
+         bool bRet = false; // pessimistic initialisation
          iCurrIndex++;
          if (iCurrIndex < aOutStrings.Length )
          {
