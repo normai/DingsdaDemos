@@ -7,7 +7,7 @@ Rename interface 'ICountable' to 'IRegisterable'.
 
 Introduce LINQ demo <sub><sup>[todo 20191218°1313]</sup></sub>
 
-Not all methods are use so far, e.g. Park(), Clean(). Use them.
+Not all methods are used so far, e.g. Park(), Clean(). Use them.
 <sub><sup>[todo 20191212°1923]</sup></sub>
 
 ---
