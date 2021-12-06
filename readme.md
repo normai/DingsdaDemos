@@ -1,15 +1,15 @@
-﻿<img src="./docs/20211206o1243.red-helicopter.v1.x0128y0066.png" align="right" width="128" height="66" alt="Icon 20211206°1243" id="id20211206o1432">
+﻿<img src="./docs/20211206o1243.red-helicopter.v1.x0256y0133.png" align="right" width="179" height="93" alt="Icon 20211206°1243" id="id20211206o1432">
 
-# DingsdaDemos Solution &nbsp; <sup><sub><sup>v0.3.0x..</sup></sub></sup>
+# DingsdaDemos &nbsp; <sup><sub><sup>v0.3.1</sup></sub></sup>
 
 ## 1. Synopsis
 
 **Platform** : C-Sharp, Visual Studio 2019, DotNet 4.8
 
-**Slogan** : Understand some baffling C# features
+**Slogan** : Understand some non-trivial C-Sharp features
 
 **Summary** : This solution hosts some project to demonstrate
-some non-trivial C# features like interfaces or IEnumerator.
+some non-trivial C-Sharp features like interface, IEnumerator, etc.
 
 **License** : The MIT-License
 

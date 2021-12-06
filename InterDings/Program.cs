@@ -25,7 +25,7 @@ namespace Interdingsda
       static void Main(string[] args)
       {
          // intro [line 20191212°0823]
-         Console.WriteLine("*** Welcome to InterDings v0.3.0x.. ***");
+         Console.WriteLine("*** Welcome to InterDings v0.3.1 ***");
 
          // Provide one object of each existing type [seq 20191212°0841]
          Airplane ap1 = new Airplane();
