@@ -48,9 +48,6 @@
     <Compile Include="Automobile.cs" />
     <Compile Include="Boat.cs" />
     <Compile Include="Dragon.cs" />
-    <Compile Include="GoAlbert.cs" />
-    <Compile Include="GoBeatrix.cs" />
-    <Compile Include="GoCaesar.cs" />
     <Compile Include="GoDoris.cs" />
     <Compile Include="GoEmili.cs" />
     <Compile Include="GoFritz.cs" />

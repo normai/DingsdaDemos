@@ -1,30 +1,35 @@
-﻿/*
- * [file 20191217°1211]
+﻿/**
+ * file        : 20191217°1211
+ * summary     : File for simple team collaboration
+ * license     : The MIT License
+ * authors     : Norbert C. Maier and contributors
+ * copyright   : © 2019 - 2021 Norbert C. Maier and contributors
+ * encoding    : UTF-8-with-BOM
  */
 
 using System;
-using System.Collections; // for IEnumerable
+using System.Collections;                                      // For IEnumerable
 
 namespace Interdingsda
 {
    /// <summary>
    /// This class hosts Doris' demos
    /// </summary>
-   /// <remarks>[class 20191217°1213]</remarks>
+   /// <remarks>class 20191217°1213</remarks>
    class GoDoris
    {
       /// <summary>
       /// This method performs Doris' demo
       /// </summary>
-      /// <remarks>[class 20191217°1215]</remarks>
+      /// <remarks>class 20191217°1215</remarks>
       public static void Go()
       {
-         // a very first shy experiment [seq 20191217°1311]
+         // A very first shy experiment [seq 20191217°1311]
          Console.WriteLine();
          var x1 = new Automobile();
          Console.WriteLine("Doris hat ein neues Auto : " + x1.Me);
 
-         // loop over the existing things as IEnumerables [seq 20191217°1321]
+         // Loop over the existing things as IEnumerables [seq 20191217°1321]
          Console.WriteLine("\nFrom a list of Objects, we make a list of IEnumerables, and still get the specialized types :");
          IEnumerable ienumabl = Utils.dings;
          int iCount = 0;
@@ -34,7 +39,7 @@ namespace Interdingsda
             Console.WriteLine(" - " + iCount + " " + x2.ToString().PadRight(24) + " type = " + x2.GetType().Name );
          }
 
-         // randomly create lots of thingies [seq 20191217°1331]
+         // Randomly create lots of thingies [seq 20191217°1331]
          Console.WriteLine("\nRandomly create lots of thingies :");
          var rand = new Random();
          for (int i1 = 0; i1 < 93; i1++)

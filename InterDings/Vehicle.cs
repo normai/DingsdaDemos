@@ -1,5 +1,10 @@
-﻿/*
- * [file 20191212°0911]
+﻿/**
+ * file        : 20191212°0911
+ * summary     :
+ * license     : The MIT License
+ * authors     : Norbert C. Maier and contributors
+ * copyright   : © 2019 - 2021 Norbert C. Maier and contributors
+ * encoding    : UTF-8-with-BOM
  */
 
 using System;
@@ -9,14 +14,14 @@ namespace Interdingsda
    /// <summary>
    /// This class serves as base class for all other vessels
    /// </summary>
-   /// <remarks>[class 20191212°0913]</remarks>
+   /// <remarks>class 20191212°0913</remarks>
    public abstract class Vehicle : ICountable
    {
 
       /// <summary>
       /// This constructor places each new Vehicle on the big thingies list
       /// </summary>
-      /// <remarks>[class 20191212°1121]</remarks>
+      /// <remarks>class 20191212°1121</remarks>
       public Vehicle()
       {
          Utils.iIdCounter++;
@@ -29,20 +34,20 @@ namespace Interdingsda
       /// <summary>
       /// This field tells one basic property of all vehicles
       /// </summary>
-      /// <remarks>[class 20191212°0921]</remarks>
-      public double speed = 0.0; // km/h
+      /// <remarks>class 20191212°0921</remarks>
+      public double speed = 0.0;                               // km/h
 
       /// <summary>
       /// This property is wanted by the ICountable interface. Not that to make
       /// the property sensible, we also need to set it properly in the constructor
       /// </summary>
-      /// <remarks>[prop 20191216°1531] </remarks>
+      /// <remarks>prop 20191216°1531 </remarks>
       public int ID { get; set; }
 
       /// <summary>
       /// This property is wanted by the ICountable interface.
       /// </summary>
-      /// <remarks>[prop 20191216°1533] </remarks>
+      /// <remarks>prop 20191216°1533 </remarks>
       public string Me
       {
          get
@@ -56,7 +61,7 @@ namespace Interdingsda
       /// This abstract method has no code body. So each derrived class
       ///  must implement such method, quite like with an interface.
       /// </summary>
-      /// <remarks>[class 20191212°0931]</remarks>
+      /// <remarks>class 20191212°0931</remarks>
       abstract public void Park();
 
       /// <summary>
@@ -64,7 +69,7 @@ namespace Interdingsda
       ///  can either use this default action, or overwrite it with it's
       ///  own implementation.
       /// </summary>
-      /// <remarks>[class 20191212°0941]</remarks>
+      /// <remarks>class 20191212°0941</remarks>
       virtual public void Clean()
       {
          string s = this.GetType().Name + " : Putz, schrubb, wisch, ..";

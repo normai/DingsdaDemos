@@ -1,5 +1,10 @@
-﻿/*
- * [file 20191212°0111]
+﻿/**
+ * file        : 20191212°0111
+ * summary     :
+ * license     : The MIT License
+ * authors     : Norbert C. Maier and contributors
+ * copyright   : © 2019 - 2021 Norbert C. Maier and contributors
+ * encoding    : UTF-8-with-BOM
  */
 
 using System;
