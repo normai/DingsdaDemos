@@ -1,8 +1,10 @@
-﻿# DingsdaDemos Solution &nbsp; <sup><sub><sup>v0.3.0x..</sup></sub></sup>
+﻿<img src="./docs/20211206o1243.red-helicopter.v1.x0128y0066.png" align="right" width="128" height="66" alt="Icon 20211206°1243" id="id20211206o1432">
+
+# DingsdaDemos Solution &nbsp; <sup><sub><sup>v0.3.0x..</sup></sub></sup>
 
 ## 1. Synopsis
 
-**Platform** : C-Sharp, Visual Studio 2017, .NET 4.6.1
+**Platform** : C-Sharp, Visual Studio 2019, DotNet 4.8
 
 **Slogan** : Understand some baffling C# features
 
@@ -65,12 +67,21 @@ The **ISwimmable** interface provides some objects the swimming capability.
 The **ICountable** interface provides all classes in the game some common
 addressing properties, so we can have a list of just all existing things.
 
-### 4.2 Points of Interest
+### 3.2 Points of Interest
 
 The ICountable interface could be replaced by extension methods on the Object class.
 But we shyed away from this move, because we do not want touch the .NET core functionality.
 
-. . .
+...
+
+## 4 Credits
+
+The top right logo comes from
+ [openclipart.org/detail/172801/helicopter](https://openclipart.org/detail/172801/helicopter)
+ under the
+ [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+ Public Domain Dedication
+ 
 
 ---
 
