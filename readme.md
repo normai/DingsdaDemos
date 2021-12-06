@@ -1,4 +1,4 @@
-﻿# DingsdaDemos Solution <sub><sup>v0.3.0x</sup></sub>
+﻿# DingsdaDemos Solution &nbsp; <sup><sub><sup>v0.3.0x..</sup></sub></sup>
 
 ## 1. Synopsis
 
@@ -73,4 +73,5 @@ But we shyed away from this move, because we do not want touch the .NET core fun
 . . .
 
 ---
- <sub><sup>[file 20191216°1717][solution 20191212°0011]܀Ω</sup></sub>
+
+<sup><sub><sup>*[file 20191216°1717] [solution 20191212°0011]* ܀Ω</sup></sub></sup>

@@ -1,6 +1,6 @@
-﻿## Additional notes
+﻿# Additional notes
 
-### 1. Todos
+## 1. Todos
 
 <sub><sup>[todo 20191218°1631]</sup></sub>
 Rename interface 'ICountable' to 'IRegisterable'.
@@ -14,15 +14,15 @@ Not all methods are used so far, e.g. Park(), Clean(). Use them.
 
 *[todo : Check the correctness of the following listing.]*
 
-### 2. Development Phases or Tags
+## 2. Development Phases or Tags
 
-#### 2.1 Development Phase 3 2019-Dec-18
+### 2.1 Development Phase 3 2019-Dec-18
 
 Introduces sequences to demonstrate **IEnumerable**
 
 This is from when the solution resides on GitHub
 
-#### 2.2 Development Phase 2
+### 2.2 Development Phase 2
 
 This are Tags ~~'Last-multi-phase-folders' 20191217°1000
 and ~~'interdings-v0-3-0' 20191217°1022
@@ -43,7 +43,7 @@ and which continue to exist exactly as they are.
 To inspect the changes of the transformation, see the GIT logs with
 comment 'Adjust syntax' and 'Restore functionality'.
 
-#### 2.3 Development Phase 1
+### 2.3 Development Phase 1
 
 This is Tag 'InterDings.v011' 20191216°1441
 
@@ -57,4 +57,5 @@ the next version.
 ![Overview Project Interdingsda](./20191212o1211.interdingsda.uxf.png "Project Interdingsda Phase 1")
 
 ---
- <sub><sup>[file 20191216°1431]܀Ω</sup></sub>
+
+<sup><sub><sup>*[file 20191216°1431]* ܀Ω</sup></sub></sup>
